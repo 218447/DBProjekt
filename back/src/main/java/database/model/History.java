@@ -19,7 +19,7 @@ public class History {
     public int getId() {
         return id;
     }
-//adda
+
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "day", cascade = {CascadeType.REMOVE, CascadeType.PERSIST})
     public Day getDay() {
         return day;
